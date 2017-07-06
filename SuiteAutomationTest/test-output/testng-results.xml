@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Web Funcional Test" duration-ms="133879" started-at="2017-07-05T20:04:27Z" finished-at="2017-07-05T20:06:41Z">
+    <groups>
+    </groups>
+    <test name="Linux-Chrome" duration-ms="133879" started-at="2017-07-05T20:04:27Z" finished-at="2017-07-05T20:06:41Z">
+      <class name="webFunctionalTests.FuncionalTesteView">
+        <test-method status="PASS" signature="testViewProducts()[pri:0, instance:webFunctionalTests.FuncionalTesteView@4566e5bd]" name="testViewProducts" duration-ms="129867" started-at="2017-07-05T17:04:31Z" finished-at="2017-07-05T17:06:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testViewProducts -->
+      </class> <!-- webFunctionalTests.FuncionalTesteView -->
+      <class name="tools.CriarAmbienteWeb">
+        <test-method status="PASS" signature="iniciarInstancia(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tools.CriarAmbienteWeb@56ef9176]" name="iniciarInstancia" is-config="true" duration-ms="3968" started-at="2017-07-05T17:04:27Z" finished-at="2017-07-05T17:04:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[54]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iniciarInstancia -->
+        <test-method status="PASS" signature="finalizar(java.lang.String)[pri:0, instance:tools.CriarAmbienteWeb@56ef9176]" name="finalizar" is-config="true" duration-ms="21" started-at="2017-07-05T17:06:41Z" finished-at="2017-07-05T17:06:41Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalizar -->
+      </class> <!-- tools.CriarAmbienteWeb -->
+    </test> <!-- Linux-Chrome -->
+  </suite> <!-- Web Funcional Test -->
+</testng-results>

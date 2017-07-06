@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Mobile Funcional Test">
+
+
+<!-- 	<test name="Test">
+		<classes>
+			<class name="tools.CriarAmbienteMobile" />
+			<class name="mobileFunctionalTests.TesteAcessoProtocoloSenha" />
+		</classes>
+	</test> -->
+
+	<test name="Mobile-Android" preserve-order="true">
+		<parameter name="so" value="local"></parameter>
+		<parameter name="navegador" value="chrome"></parameter>
+		<parameter name="versao" value="default"></parameter>
+		<classes>
+			<class name="tools.CriarAmbienteMobile" />
+			<class name="mobileFunctionalTests.TesteAcessoProtocoloSenha" />
+		</classes>
+	</test>
+
+</suite> 
+
+
+

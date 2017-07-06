@@ -1,0 +1,11 @@
+#Tests Cases#
+
+#Web Functional Test -
+- Verificacao se existe JSON do Top Search Neemu.
+- Verificacao das sugestões de Busca Neemu se possuem relacao.
+- Verificacao das sugestões de Busca Neemu se possuem relacao, utilizando gerador de String.
+- Verificacao se existe vitrines na página.
+- Envio de campanhas de email para email reais.
+
+#Web Functional Test Parallel -
+- 

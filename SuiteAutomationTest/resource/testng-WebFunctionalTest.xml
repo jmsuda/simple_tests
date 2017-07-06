@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Web Funcional Test">
+	
+<!-- 	<test name="Linux-Chrome" preserve-order="true">
+		<parameter name="so" value="local"></parameter>
+		<parameter name="navegador" value="Chrome"></parameter>
+		<parameter name="versao" value="54"></parameter>
+		<classes>
+			<class name="tools.CriarAmbienteWeb" />
+			<class name="webFunctionalTests.FuncionalTesteBusca" >
+				<methods>
+					<include name="verificarNeemuTopSearch" />
+					<include name="verificarSegestaoBusca" />
+					<include name="verificarSegestaoBuscaRandom" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+	
+<!--  		<test name="Linux-Chrome" preserve-order="true">
+		<parameter name="so" value="local"></parameter>
+		<parameter name="navegador" value="Chrome"></parameter>
+		<parameter name="versao" value="54"></parameter>
+		<classes>
+			<class name="tools.CriarAmbienteWeb" />
+			<class name="webFunctionalTests.FuncionalTesteEnvioEmail" >
+				<methods>
+					<include name="envioEmailRendererMax" />
+				</methods>
+			</class>
+		</classes>
+	</test>  -->
+	
+   	<test name="Linux-Chrome" preserve-order="true">
+		<parameter name="so" value="local"></parameter>
+		<parameter name="navegador" value="Chrome"></parameter>
+		<parameter name="versao" value="54"></parameter>
+		<classes>
+			<class name="tools.CriarAmbienteWeb" />
+			<class name="webFunctionalTests.FuncionalTesteView" >
+				<methods>
+					<include name="testViewProducts" />
+				</methods>
+			</class>
+		</classes>
+	</test>  
+
+</suite> 

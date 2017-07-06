@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Web Funcional Test]">
+  <parameter name="navegador" value="Chrome"/>
+  <parameter name="so" value="local"/>
+  <parameter name="versao" value="54"/>
+  <test name="Linux-Chrome(failed)">
+    <parameter name="navegador" value="Chrome"/>
+    <parameter name="so" value="local"/>
+    <parameter name="versao" value="54"/>
+    <classes>
+      <class name="tools.CriarAmbienteWeb">
+        <methods>
+          <include name="iniciarInstancia"/>
+          <include name="finalizar"/>
+        </methods>
+      </class> <!-- tools.CriarAmbienteWeb -->
+      <class name="webFunctionalTests.FuncionalTesteView">
+        <methods>
+          <include name="testViewProducts"/>
+        </methods>
+      </class> <!-- webFunctionalTests.FuncionalTesteView -->
+    </classes>
+  </test> <!-- Linux-Chrome(failed) -->
+</suite> <!-- Failed suite [Web Funcional Test] -->

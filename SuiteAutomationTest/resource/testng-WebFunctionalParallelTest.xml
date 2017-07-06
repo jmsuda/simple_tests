@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Web Funcional Parallel Test" parallel="tests" thread-count="2">
+	
+<!-- 	<test name="FireFox 1">
+		<parameter name="so" value="local"></parameter>
+		<parameter name="navegador" value="firefox"></parameter>
+		<parameter name="versao" value=""46""></parameter>
+		<classes>
+			<class name="tools.CriarAmbienteWeb" />
+			<class name="webFunctionalParallelTests.FuncionalTesteBusca" >
+				<methods>
+					<include name="carregouAplicacao" />
+					<include name="paginaBusca" />
+				</methods>
+			</class>
+		</classes>
+	</test> -->
+
+	<test name="FireFox 2">
+		<parameter name="so" value="local"></parameter>
+		<parameter name="navegador" value="firefox"></parameter>
+		<parameter name="versao" value="46"></parameter>
+		<classes>
+			<class name="tools.CriarAmbienteWeb" />
+			<class name="webFunctionalParallelTests.FuncionalTesteBusca">
+				<methods>
+					<include name="carregouAplicacao" />
+					<include name="paginaBusca" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite> 
