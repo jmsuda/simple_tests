@@ -21,10 +21,10 @@
 // 	@BeforeTest
 // 	public void iniciarInstancia(String so, @Optional String navegador,@Optional String versao) throws MalformedURLException {
 // 		System.out.println("----> Inicio dos testes Mobile: "+ System.currentTimeMillis());
-// 		System.out.println("----> Instânciando o Driver");
+// 		System.out.println("----> Instanciando o Driver");
 // 		System.out.println("----> Plataforma: " + so);
 // 		System.out.println("----> Navegador: " + navegador);
-// 		System.out.println("----> Versão: " + versao);
+// 		System.out.println("----> Versao: " + versao);
 // 		WebdriverMobile.criarInstanciaMobile();
 // 	}
 
