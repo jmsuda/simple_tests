@@ -9,6 +9,10 @@ machine:
 #     - git submodule sync
 #     - git submodule update --init # use submodules
 
+general:
+  build_dir: SuiteAutomationTest
+
+
 ## Customize dependencies
 dependencies:
   pre:
