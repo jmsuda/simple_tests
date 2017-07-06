@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de S�
+ * @author Eduardo C. de Sa
  *
  * 01/06/2016
  */
@@ -38,7 +38,7 @@ public class FuncionalTesteNewsletter {
 		
 		Chillibeans cb = new Chillibeans();
 
-//		System.out.println("----> Início dos testes: Verificacao se existe Vitrines.");
+//		System.out.println("----> Inicio dos testes: Verificacao se existe Vitrines.");
 //		WebdriverWeb.carregarUrl("http://loja.chillibeans.com.br/");
 //		cb.inserirEmailNewsletter(WebdriverWeb.obterInstancia(), "xxx@xxx.com");
 //		cb.clicarBotaoNewsletter(WebdriverWeb.obterInstancia());

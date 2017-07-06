@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de S�
+ * @author Eduardo C. de Sa
  *
  * 07/07/2015
  */
@@ -41,7 +41,7 @@ public class FuncionalTesteBusca {
 
 		Busca b = new Busca();
 
-		System.out.println("----> Início dos testes: Verificacao se existe JSON diferente de null ou vazio no Top Search Neemu.");
+		System.out.println("----> Inicio dos testes: Verificacao se existe JSON diferente de null ou vazio no Top Search Neemu.");
 
 		WebdriverWeb.carregarUrl(Rotas.URLBUSCA+Rotas.URLTOPSEARCHNEEMU);		
 		String text = b.findJSONTopSearchNeemu(WebdriverWeb.obterInstancia());

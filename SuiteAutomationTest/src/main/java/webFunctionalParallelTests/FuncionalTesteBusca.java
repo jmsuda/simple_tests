@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de S�
+ * @author Eduardo C. de Sa
  *
  * 07/07/2015
  */
@@ -36,7 +36,7 @@ public class FuncionalTesteBusca {
 	@Test(invocationCount = 100, threadPoolSize = 1)
 	public void paginaBusca() {
 
-		System.out.println("----> Início dos testes paralelos: Buscar pelo mesmo termo N vezes, para subir no ranking de mais pesquisados.");
+		System.out.println("----> Inicio dos testes paralelos: Buscar pelo mesmo termo N vezes, para subir no ranking de mais pesquisados.");
 
 		Busca b = new Busca();
 		WebdriverWeb.carregarUrl(Rotas.URLBUSCA);
