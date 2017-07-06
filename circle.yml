@@ -10,7 +10,7 @@ machine:
 #     - git submodule update --init # use submodules
 
 general:
-  build_dir: simple_tests/SuiteAutomationTest
+  build_dir: /SuiteAutomationTest
 
 
 ## Customize dependencies
