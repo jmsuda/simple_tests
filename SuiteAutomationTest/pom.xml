@@ -20,9 +20,9 @@
 	      <source>1.7</source>
 	      <target>1.7</target>
 	      <encoding>UTF-8</encoding>
-	      <includes>
-            <include>FunctionalViewTest.java</include>
-          </includes>
+	      <suiteXmlFiles>
+            <suiteXmlFile>testng-WebFunctionalTest.xml</suiteXmlFile>
+          </suiteXmlFiles>
 	    </configuration>
 	  </plugin>
 	</plugins>
