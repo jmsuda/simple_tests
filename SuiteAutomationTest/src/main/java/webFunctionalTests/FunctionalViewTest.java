@@ -18,7 +18,7 @@ import pages.Platform;
  * @author eduardo.sa
  *
  */
-public class FunctionalViewTestCase {
+public class FunctionalViewTest {
 
 	@Test
 	public void testViewProducts() throws IOException, ParseException {
