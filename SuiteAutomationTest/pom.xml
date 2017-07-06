@@ -9,6 +9,14 @@
 	    <groupId>org.apache.maven.plugins</groupId>
 	    <artifactId>maven-compiler-plugin</artifactId>
 	    <version>3.1</version>
+	    
+	    <dependencies>
+	      <dependency>
+	        <artifactId>surefire-testng</artifactId>
+	        <version>6.1.1</version>
+	      </dependency>
+	    </dependencies>
+
 	    <configuration>
 	      <source>1.7</source>
 	      <target>1.7</target>
