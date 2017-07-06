@@ -10,7 +10,7 @@
 		</classes>
 	</test> -->
 
-	<test name="Mobile-Android" preserve-order="true">
+<!-- 	<test name="Mobile-Android" preserve-order="true">
 		<parameter name="so" value="local"></parameter>
 		<parameter name="navegador" value="chrome"></parameter>
 		<parameter name="versao" value="default"></parameter>
@@ -18,7 +18,7 @@
 			<class name="tools.CriarAmbienteMobile" />
 			<class name="mobileFunctionalTests.TesteAcessoProtocoloSenha" />
 		</classes>
-	</test>
+	</test> -->
 
 </suite> 
 

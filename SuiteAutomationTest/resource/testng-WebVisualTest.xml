@@ -12,7 +12,7 @@
 		</classes>
 	</test> -->
 
-	<test name="Windows7-FireFox" preserve-order="true">
+	<!-- <test name="Windows7-FireFox" preserve-order="true">
 		<parameter name="so" value="local"></parameter>
 		<parameter name="navegador" value="firefox"></parameter>
 		<parameter name="versao" value="46"></parameter>
@@ -20,7 +20,7 @@
 			<class name="tools.CriarAmbienteWeb" />
 			<class name="webVisualTests.registroViewAcessarProduto"/>
 		</classes>
-	</test>
+	</test> -->
 
 </suite> 
 	
