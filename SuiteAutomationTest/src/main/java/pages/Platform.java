@@ -281,7 +281,7 @@ public class Platform {
 		}		
 		
 		if(listIdProductPlatform.isEmpty()){
-			System.out.println("----> Não há produtos no Platform. Possivelmente apiKey invalida!");
+			System.out.println("----> Nao ha produtos no Platform. Possivelmente apiKey invalida!");
 		}
 		
 		return listIdProductPlatform;

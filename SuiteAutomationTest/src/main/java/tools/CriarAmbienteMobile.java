@@ -20,7 +20,7 @@
 // 	@Parameters({ "so", "navegador", "versao" })
 // 	@BeforeTest
 // 	public void iniciarInstancia(String so, @Optional String navegador,@Optional String versao) throws MalformedURLException {
-// 		System.out.println("----> Início dos testes Mobile: "+ System.currentTimeMillis());
+// 		System.out.println("----> Inicio dos testes Mobile: "+ System.currentTimeMillis());
 // 		System.out.println("----> Instânciando o Driver");
 // 		System.out.println("----> Plataforma: " + so);
 // 		System.out.println("----> Navegador: " + navegador);

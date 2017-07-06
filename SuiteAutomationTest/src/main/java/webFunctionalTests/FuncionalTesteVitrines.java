@@ -39,7 +39,7 @@ public class FuncionalTesteVitrines {
 
 		Vitrines v = new Vitrines();
 
-		System.out.println("----> Início dos testes: Verificacao se existe Vitrines.");
+		System.out.println("----> Inicio dos testes: Verificacao se existe Vitrines.");
 		WebdriverWeb.carregarUrl(Rotas.URLVITRINES);		
 		v.verificarPresencaVitrines(WebdriverWeb.obterInstancia());
 

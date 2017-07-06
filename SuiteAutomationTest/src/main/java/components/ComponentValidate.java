@@ -14,7 +14,7 @@ public class ComponentValidate {
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id)));
 			resultado = true;			
 		} catch (Exception e) {
-			System.err.println("Não foi possível inserir o valor no campo informado.\n"+e);
+			System.err.println("Nao foi possivel inserir o valor no campo informado.\n"+e);
 		}
 		return resultado;
 	}
