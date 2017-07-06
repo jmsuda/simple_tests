@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Web Funcional Test" duration-ms="133879" started-at="2017-07-05T20:04:27Z" finished-at="2017-07-05T20:06:41Z">
+  <suite name="Web Funcional Test" duration-ms="114884" started-at="2017-07-06T14:15:49Z" finished-at="2017-07-06T14:17:44Z">
     <groups>
     </groups>
-    <test name="Linux-Chrome" duration-ms="133879" started-at="2017-07-05T20:04:27Z" finished-at="2017-07-05T20:06:41Z">
+    <test name="Linux-Chrome" duration-ms="114884" started-at="2017-07-06T14:15:49Z" finished-at="2017-07-06T14:17:44Z">
       <class name="webFunctionalTests.FuncionalTesteView">
-        <test-method status="PASS" signature="testViewProducts()[pri:0, instance:webFunctionalTests.FuncionalTesteView@4566e5bd]" name="testViewProducts" duration-ms="129867" started-at="2017-07-05T17:04:31Z" finished-at="2017-07-05T17:06:41Z">
+        <test-method status="PASS" signature="testViewProducts()[pri:0, instance:webFunctionalTests.FuncionalTesteView@5025a98f]" name="testViewProducts" duration-ms="97606" started-at="2017-07-06T11:16:06Z" finished-at="2017-07-06T11:17:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testViewProducts -->
       </class> <!-- webFunctionalTests.FuncionalTesteView -->
       <class name="tools.CriarAmbienteWeb">
-        <test-method status="PASS" signature="iniciarInstancia(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tools.CriarAmbienteWeb@56ef9176]" name="iniciarInstancia" is-config="true" duration-ms="3968" started-at="2017-07-05T17:04:27Z" finished-at="2017-07-05T17:04:31Z">
+        <test-method status="PASS" signature="iniciarInstancia(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tools.CriarAmbienteWeb@2d928643]" name="iniciarInstancia" is-config="true" duration-ms="16639" started-at="2017-07-06T11:15:49Z" finished-at="2017-07-06T11:16:06Z">
           <params>
             <param index="0">
               <value>
@@ -34,7 +34,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- iniciarInstancia -->
-        <test-method status="PASS" signature="finalizar(java.lang.String)[pri:0, instance:tools.CriarAmbienteWeb@56ef9176]" name="finalizar" is-config="true" duration-ms="21" started-at="2017-07-05T17:06:41Z" finished-at="2017-07-05T17:06:41Z">
+        <test-method status="PASS" signature="finalizar(java.lang.String)[pri:0, instance:tools.CriarAmbienteWeb@2d928643]" name="finalizar" is-config="true" duration-ms="440" started-at="2017-07-06T11:17:43Z" finished-at="2017-07-06T11:17:44Z">
           <params>
             <param index="0">
               <value is-null="true"/>
