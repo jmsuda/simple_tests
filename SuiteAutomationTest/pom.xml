@@ -4,6 +4,7 @@
 
 
 <build>
+	<testSourceDirectory>${basedir}/src/main/java/webFunctionalTests</testSourceDirectory> 
 	<plugins>
 	  <plugin>
 	    <groupId>org.apache.maven.plugins</groupId>
@@ -23,6 +24,11 @@
 	      <suiteXmlFiles>
             <suiteXmlFile>testng-WebFunctionalTest.xml</suiteXmlFile>
           </suiteXmlFiles>
+
+
+        <!--   <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
+          <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory> -->
+
 	    </configuration>
 	  </plugin>
 	</plugins>
