@@ -15,11 +15,11 @@
           <include name="finalizar"/>
         </methods>
       </class> <!-- tools.CriarAmbienteWeb -->
-      <class name="webFunctionalTests.FuncionalTesteView">
+      <class name="webFunctionalTests.FunctionalViewTest">
         <methods>
           <include name="testViewProducts"/>
         </methods>
-      </class> <!-- webFunctionalTests.FuncionalTesteView -->
+      </class> <!-- webFunctionalTests.FunctionalViewTest -->
     </classes>
   </test> <!-- Linux-Chrome(failed) -->
 </suite> <!-- Failed suite [Web Funcional Test] -->

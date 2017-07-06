@@ -38,7 +38,7 @@
 		<parameter name="versao" value="54"></parameter>
 		<classes>
 			<class name="tools.CriarAmbienteWeb" />
-			<class name="webFunctionalTests.FuncionalTesteView" >
+			<class name="webFunctionalTests.FunctionalViewTest" >
 				<methods>
 					<include name="testViewProducts" />
 				</methods>
