@@ -1,7 +1,7 @@
 ## Customize the test machine
 machine:
   java:
-    version: openjdk7
+    version: openjdk8
 
 ## Customize checkout
 # checkout:
@@ -17,7 +17,9 @@ general:
 dependencies:
   pre:
     - mvn dependency:resolve
-
+    - sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0/bin/java
+    - sudo update-alternatives --set javac /usr/lib/jvm/java-8-openjdk-amd64/bin/javac
+    - echo 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64' >> ~/.circlerc
   # override:
   #   - bundle install: # note ':' here
   #       timeout: 180 # fail if command has no output for 3 minutes
