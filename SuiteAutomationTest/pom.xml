@@ -24,11 +24,6 @@
 	      <suiteXmlFiles>
             <suiteXmlFile>testng-WebFunctionalTest.xml</suiteXmlFile>
           </suiteXmlFiles>
-
-
-        <!--   <testSourceDirectory>${basedir}/src/main/java/</testSourceDirectory>
-          <testClassesDirectory>${project.build.directory}/classes/</testClassesDirectory> -->
-
 	    </configuration>
 	  </plugin>
 	</plugins>
