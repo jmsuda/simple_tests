@@ -1,7 +1,7 @@
 ## Customize the test machine
 machine:
   java:
-    version: openjdk8
+    version: openjdk7
 
 ## Customize checkout
 # checkout:
