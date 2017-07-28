@@ -30,7 +30,7 @@ public class FunctionalViewTest {
 		ArrayList<String> listIdProductPlatform = new ArrayList<String>(); 
 
 		String apiKey = "cec";
-		int quantProd = 5;
+		int quantProd = 1;
 
 		System.out.println("----> Testes de view de produtos no cliente: "+apiKey);
 
