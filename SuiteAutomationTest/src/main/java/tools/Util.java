@@ -11,6 +11,8 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+
+
 /**
  * @author eduardo.sa
  *
@@ -18,10 +20,12 @@ import org.openqa.selenium.TakesScreenshot;
 public class Util {
 
 	public static final String NAMEDB= "";
-	public static final String PLATUSER= PlatformAuthentication.platUser();
-	public static final String PLATPASS= PlatformAuthentication.platPass();
 
+	public static final String PLATUSER= System.getProperty("platusername");//PlatformAuthentication.platUser();
+	public static final String PLATPASS= System.getProperty("platpassword");//PlatformAuthentication.platPass();
 
+	
+	
 
 	public static final void gerarEvidenciaTeste() {
 		String nomeMetodo = Thread.currentThread().getStackTrace()[2].getMethodName();

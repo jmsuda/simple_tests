@@ -258,6 +258,7 @@ public class Platform {
 		HttpURLConnection request = (HttpURLConnection) url.openConnection();
 		Authenticator.setDefault (new Authenticator() {
 			protected PasswordAuthentication getPasswordAuthentication() {
+				System.out.println("platusername "+Util.PLATUSER);
 				return new PasswordAuthentication (Util.PLATUSER, Util.PLATPASS.toCharArray());
 			}
 		});

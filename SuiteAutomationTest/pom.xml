@@ -1,109 +1,134 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<build>
+		<testSourceDirectory>${basedir}/src/main/java/webFunctionalTests</testSourceDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.apache.maven.surefire</groupId>
+						<artifactId>surefire-testng</artifactId>
+						<version>2.20</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+<!-- 					<systemPropertyVariables>
+						<platusername>${env.PLAT_USER}</platusername>
+						<platpassword>${env.PLAT_PASSWORD}</platpassword>
+					</systemPropertyVariables> -->
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng-WebFunctionalTest.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.20</version>
+				<configuration>
+					<systemPropertyVariables>
+						<platusername>${env.PLAT_USER}</platusername>
+						<platpassword>${env.PLAT_PASSWORD}</platpassword>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+		</plugins>
+
+		<resources>
+			<resource>
+				<directory>resource</directory>
+			</resource>
 
 
-<build>
-	<testSourceDirectory>${basedir}/src/main/java/webFunctionalTests</testSourceDirectory> 
-	<plugins>
-	  <plugin>
-	    <groupId>org.apache.maven.plugins</groupId>
-	    <artifactId>maven-compiler-plugin</artifactId>
-	    <version>3.1</version>
-	    <dependencies>
-	      <dependency>
-	        <groupId>org.apache.maven.surefire</groupId>
-	        <artifactId>surefire-testng</artifactId>
-	        <version>2.20</version>
-	      </dependency>
-	    </dependencies>
-	    <configuration>
-	      <source>1.7</source>
-	      <target>1.7</target>
-	      <encoding>UTF-8</encoding>
-	      <suiteXmlFiles>
-            <suiteXmlFile>testng-WebFunctionalTest.xml</suiteXmlFile>
-          </suiteXmlFiles>
-	    </configuration>
-	  </plugin>
-	</plugins>
+			<!-- include main.properties -->
+			<resource>
+				<directory>src/main/java/tools</directory>
+				<filtering>true</filtering>
+			</resource>
 
-	<resources>
-    	<resource>
-       		<directory>resource</directory>
-     	</resource>
-   </resources>
-</build>
+			<resource>
+				<directory>${basedir}/src/main/java</directory>
+			</resource>
+
+		</resources>
+	</build>
 
 
-  <groupId>SuiteAutomationTest</groupId>
-  <artifactId>SuiteAutomationTest</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>SuiteAutomationTest</groupId>
+	<artifactId>SuiteAutomationTest</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-  <name>SuiteAutomationTest</name>
-  <url>http://maven.apache.org</url>
+	<name>SuiteAutomationTest</name>
+	<url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-  </properties>
+	<!-- <properties> <platusername>${env.PLAT_USER}</platusername> <platpass>${env.PLAT_PASSWORD}</platpass> 
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding> <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding> 
+		</properties> -->
 
-  <dependencies>
-	<dependency>
-	<groupId>junit</groupId>
-	<artifactId>junit</artifactId>
-	<version>3.8.1</version>
-	<scope>compile</scope>
-</dependency>
-	<dependency>
-		<groupId>org.seleniumhq.selenium</groupId>
-		<artifactId>selenium-java</artifactId>
-		<version>3.0.1</version>
-	</dependency>
-	<dependency>
-		<groupId>org.im4java</groupId>
-		<artifactId>im4java</artifactId>
-		<version>1.4.0</version>
-	</dependency>
-	<dependency>
-		<groupId>io.appium</groupId>
-		<artifactId>java-client</artifactId>
-		<version>3.1.0</version>
-	</dependency>
-	<dependency>
-		<groupId>com.googlecode.json-simple</groupId>
-		<artifactId>json-simple</artifactId>
-		<version>1.1.1</version>
-	</dependency>
-	<dependency>
-		<groupId>net.lightbody.bmp</groupId>
-		<artifactId>browsermob-core</artifactId>
-		<version>2.1.2</version>
-		<scope>compile</scope>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-api</artifactId>
-		<version>1.5.6</version>
-		<type>jar</type>
-	</dependency>
-	<dependency>
-		<groupId>org.slf4j</groupId>
-		<artifactId>slf4j-simple</artifactId>
-		<version>1.5.6</version>
-	</dependency>
-	<dependency>
-	  	<groupId>de.sstoehr</groupId>
-	  	<artifactId>har-reader</artifactId>
-	  	<version>2.0.1</version>
-	</dependency>
-	<dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>6.1.1</version>
-        <scope>compile</scope>
-    </dependency>
-   
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.im4java</groupId>
+			<artifactId>im4java</artifactId>
+			<version>1.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>net.lightbody.bmp</groupId>
+			<artifactId>browsermob-core</artifactId>
+			<version>2.1.2</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.5.6</version>
+			<type>jar</type>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.5.6</version>
+		</dependency>
+		<dependency>
+			<groupId>de.sstoehr</groupId>
+			<artifactId>har-reader</artifactId>
+			<version>2.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.1.1</version>
+			<scope>compile</scope>
+		</dependency>
+
 	</dependencies>
 </project>
