@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de S�
+ * @author Eduardo C. de Sa
  *
  * 27/07/2015
  */
@@ -62,7 +62,7 @@ public class GeradorDatas {
 			String dia = strData.substring(8, 10);
 			strData = dia+"/"+mes+"/"+ano;
 		} catch (Exception e) {
-			System.out.println("N�o foi poss�vel normalizar a Data. "+e);
+			System.out.println("Nao foi possivel normalizar a Data. "+e);
 		}
 		return strData;
 	}
@@ -75,7 +75,7 @@ public class GeradorDatas {
 			String dia = strData.substring(8, 10);
 			strData = dia+"/"+mes+"/"+ano;
 		} catch (Exception e) {
-			System.out.println("N�o foi poss�vel normalizar a Data. "+e);
+			System.out.println("Nao foi possivel normalizar a Data. "+e);
 		}
 		return strData;
 	}

@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de S�
+ * @author Eduardo C. de Sa
  *
  * 07/07/2015
  */
@@ -39,7 +39,7 @@ public class FuncionalTesteVitrines {
 
 		Vitrines v = new Vitrines();
 
-		System.out.println("----> Início dos testes: Verificacao se existe Vitrines.");
+		System.out.println("----> Inicio dos testes: Verificacao se existe Vitrines.");
 		WebdriverWeb.carregarUrl(Rotas.URLVITRINES);		
 		v.verificarPresencaVitrines(WebdriverWeb.obterInstancia());
 
@@ -49,7 +49,7 @@ public class FuncionalTesteVitrines {
 	@Test
 	public void verficarAcessoLinks() throws ClientProtocolException, IOException {
 		Vitrines v = new Vitrines();
-		System.out.println("----> Início dos testes: Verificacao de acesso aos links disponiveis na pagina.");
+		System.out.println("----> Inicio dos testes: Verificacao de acesso aos links disponiveis na pagina.");
 		WebdriverWeb.carregarUrl(Rotas.URLVITRINES);		
 		v.verificarLinks(WebdriverWeb.obterInstancia());
 	}

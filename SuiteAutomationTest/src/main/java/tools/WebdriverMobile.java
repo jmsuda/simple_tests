@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de Sá
+ * @author Eduardo C. de Sa
  *
  * 13/08/2015
  */

@@ -5,7 +5,7 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Web_Funcional_Test">
-              <span class="suite-name border-passed">Web Funcional Test</span>
+              <span class="suite-name border-failed">Web Funcional Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Web_Funcional_Test" class="hide-methods passed suite-Web_Funcional_Test"> (hide)</a> <!-- hide-methods passed suite-Web_Funcional_Test -->
-                      <a href="#" panel-name="suite-Web_Funcional_Test" class="show-methods passed suite-Web_Funcional_Test"> (show)</a> <!-- show-methods passed suite-Web_Funcional_Test -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Web_Funcional_Test" class="hide-methods failed suite-Web_Funcional_Test"> (hide)</a> <!-- hide-methods failed suite-Web_Funcional_Test -->
+                      <a href="#" panel-name="suite-Web_Funcional_Test" class="show-methods failed suite-Web_Funcional_Test"> (show)</a> <!-- show-methods failed suite-Web_Funcional_Test -->
                     </span>
-                    <div class="method-list-content passed suite-Web_Funcional_Test">
+                    <div class="method-list-content failed suite-Web_Funcional_Test">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Web_Funcional_Test" title="webFunctionalTests.FuncionalTesteView" hash-for-method="testViewProducts">testViewProducts</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Web_Funcional_Test" title="webFunctionalTests.FunctionalViewTest" hash-for-method="testViewProducts">testViewProducts</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Web_Funcional_Test -->
+                    </div> <!-- method-list-content failed suite-Web_Funcional_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,10 +117,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Web_Funcional_Test" class="panel Web_Funcional_Test">
-          <div class="suite-Web_Funcional_Test-class-passed">
+          <div class="suite-Web_Funcional_Test-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">webFunctionalTests.FuncionalTesteView</span>
+              <img src="failed.png"/>
+              <span class="class-name">webFunctionalTests.FunctionalViewTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -128,14 +128,30 @@
                   <a name="testViewProducts">
                   </a> <!-- testViewProducts -->
                   <span class="method-name">testViewProducts</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at pages.Platform$4.getPasswordAuthentication(Platform.java:262)
+	at java.net.Authenticator.requestPasswordAuthentication(Authenticator.java:317)
+	at sun.net.www.protocol.http.HttpURLConnection$1.run(HttpURLConnection.java:453)
+	at sun.net.www.protocol.http.HttpURLConnection$1.run(HttpURLConnection.java:448)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.net.www.protocol.http.HttpURLConnection.privilegedRequestPasswordAuthentication(HttpURLConnection.java:447)
+	at sun.net.www.protocol.http.HttpURLConnection.getServerAuthentication(HttpURLConnection.java:2421)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1719)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1474)
+	at java.net.URLConnection.getContent(URLConnection.java:739)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getContent(HttpsURLConnectionImpl.java:434)
+	at pages.Platform.getIdProductsPlatform(Platform.java:268)
+	at webFunctionalTests.FunctionalViewTest.testViewProducts(FunctionalViewTest.java:37)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Web_Funcional_Test-class-passed -->
+          </div> <!-- suite-Web_Funcional_Test-class-failed -->
         </div> <!-- panel Web_Funcional_Test -->
         <div panel-name="test-xml-Web_Funcional_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/home/eduardocorrea/Documents/chaordicWorkspace/integration-tools/SuiteAutomationTest/resource/testng-WebFunctionalTest.xml</span>
+            <span class="header-content">/home/juliana/Documents/personal_workspace/simple_tests/SuiteAutomationTest/resource/testng-WebFunctionalTest.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,11 +164,11 @@
     &lt;parameter name=&quot;versao&quot; value=&quot;54&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;tools.CriarAmbienteWeb&quot;/&gt;
-      &lt;class name=&quot;webFunctionalTests.FuncionalTesteView&quot;&gt;
+      &lt;class name=&quot;webFunctionalTests.FunctionalViewTest&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;testViewProducts&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- webFunctionalTests.FuncionalTesteView --&gt;
+      &lt;/class&gt; &lt;!-- webFunctionalTests.FunctionalViewTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Linux-Chrome --&gt;
 &lt;/suite&gt; &lt;!-- Web Funcional Test --&gt;
@@ -195,13 +211,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testViewProducts')
-data.setCell(0, 2, 'webFunctionalTests.FuncionalTesteView')
-data.setCell(0, 3, 129867);
+data.setCell(0, 2, 'webFunctionalTests.FunctionalViewTest')
+data.setCell(0, 3, 1782);
 window.suiteTableData['Web_Funcional_Test']= { tableData: data, tableDiv: 'times-div-Web_Funcional_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Web_Funcional_Test">
               </div> <!-- times-div-Web_Funcional_Test -->
             </div> <!-- times-div -->
@@ -234,17 +250,19 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">webFunctionalTests.FuncionalTesteView</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">webFunctionalTests.FunctionalViewTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testViewProducts</span>
-                <span class="method-start">3979 ms</span>
+                <span class="method-start">11403 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tools.CriarAmbienteWeb</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">finalizar(null)</span>
-                <span class="method-start">133851 ms</span>
+                <span class="method-start">13240 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

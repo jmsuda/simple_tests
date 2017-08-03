@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de S�
+ * @author Eduardo C. de Sa
  *
  * 20/04/2016
  */
@@ -25,7 +25,7 @@ public class FuncionalTesteEnvioEmail {
 
 		RendererMax rm = new RendererMax();
 
-		System.out.println("----> Início dos testes: Envio de email via Renderer MAX para Outlook, Gmail e Yahoo.");
+		System.out.println("----> Inicio dos testes: Envio de email via Renderer MAX para Outlook, Gmail e Yahoo.");
 
 		String longinRendererMax = "mail@chaordicsystems.com";
 		String senhaRendererMax = "gK*P-#TqDUSXZsfK*-7J";

@@ -24,7 +24,7 @@ public class ComponentSelect {
 			WebElement e = wait.until(ExpectedConditions.elementToBeClickable(By.id(id)));
 			new org.openqa.selenium.support.ui.Select(e).selectByVisibleText(nomeItem);			
 		} catch (Exception e){
-			System.err.println("Não foi possível inserir o valor no campo informado.\n"+e);
+			System.err.println("Nao foi possivel inserir o valor no campo informado.\n"+e);
 		}		
 	}
 	

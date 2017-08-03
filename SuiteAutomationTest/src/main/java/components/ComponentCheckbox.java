@@ -14,7 +14,7 @@ public class ComponentCheckbox {
 //			WebElement e = (WebElementwait.until(ExpectedConditions.visibilityOfElementLocated(By.id(id))));
 			driver.findElement(By.id(id)).click();
 		} catch (Exception e) {
-			System.err.println("Não foi possível inserir o valor no campo informado.\n"+e);
+			System.err.println("Nao foi possivel inserir o valor no campo informado.\n"+e);
 		}		
 	}
 	

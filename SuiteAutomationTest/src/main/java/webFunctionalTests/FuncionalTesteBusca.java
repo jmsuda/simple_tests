@@ -1,5 +1,5 @@
 /**
- * @author Eduardo C. de S�
+ * @author Eduardo C. de Sa
  *
  * 07/07/2015
  */
@@ -41,7 +41,7 @@ public class FuncionalTesteBusca {
 
 		Busca b = new Busca();
 
-		System.out.println("----> Início dos testes: Verificacao se existe JSON diferente de null ou vazio no Top Search Neemu.");
+		System.out.println("----> Inicio dos testes: Verificacao se existe JSON diferente de null ou vazio no Top Search Neemu.");
 
 		WebdriverWeb.carregarUrl(Rotas.URLBUSCA+Rotas.URLTOPSEARCHNEEMU);		
 		String text = b.findJSONTopSearchNeemu(WebdriverWeb.obterInstancia());
@@ -57,7 +57,7 @@ public class FuncionalTesteBusca {
 
 		Busca b = new Busca();
 
-		System.out.println("----> Início dos testes: Verificacao das sugestões de Busca Neemu se possuem relacao.");
+		System.out.println("----> Inicio dos testes: Verificacao das sugestões de Busca Neemu se possuem relacao.");
 
 		String termoPesquisado = "infantil";
 
@@ -74,7 +74,7 @@ public class FuncionalTesteBusca {
 
 		Busca b = new Busca();
 		GeradorNumeros gn = new GeradorNumeros();
-		System.out.println("----> Início dos testes: Verificacao das sugestões de Busca Neemu se possuem relacao, utilizando gerador de String.");
+		System.out.println("----> Inicio dos testes: Verificacao das sugestões de Busca Neemu se possuem relacao, utilizando gerador de String.");
 		WebdriverWeb.carregarUrl(Rotas.URLBUSCA);
 		//			String termoPesquisado = gn.gerarStringRandom(3);
 		String termoPesquisado = gn.gerarNumeroRandom(3);
@@ -83,7 +83,7 @@ public class FuncionalTesteBusca {
 			List<String> list = b.findSugestaoBuscaNeemu(WebdriverWeb.obterInstancia());
 			Assert.assertFalse(b.verificarRelacaoEntrePesquisadoSugestao(list, termoPesquisado));
 		}else{
-			System.out.println("Não retornou sugestões de busca.");
+			System.out.println("Nao retornou sugestões de busca.");
 		}
 		WebdriverWeb.carregarUrl(Rotas.URLBUSCA);	
 	}
