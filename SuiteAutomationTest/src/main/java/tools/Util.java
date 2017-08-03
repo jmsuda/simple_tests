@@ -21,8 +21,8 @@ public class Util {
 
 	public static final String NAMEDB= "";
 
-	public static final String PLATUSER= System.getProperty("platusername");//PlatformAuthentication.platUser();
-	public static final String PLATPASS= System.getProperty("platpassword");//PlatformAuthentication.platPass();
+	public static final String PLATUSER= System.getProperty("platusername");
+	public static final String PLATPASS= System.getProperty("platpassword");
 
 	
 	
