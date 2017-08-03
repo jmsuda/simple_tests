@@ -74,11 +74,11 @@ public class Platform {
 			if (!getUrlProductPlatform(item).isEmpty()){
 				if(listUrlProductPlatform.size()<quantProd){
 					listUrlProductPlatform.add(getUrlProductPlatform(item));
-					System.out.println("URL dos produtos: "+listUrlProductPlatform);
+					
 				}
 			}
 		}
-	
+		System.out.println("URL dos produtos: "+listUrlProductPlatform);
 		return listUrlProductPlatform;
 	}
 

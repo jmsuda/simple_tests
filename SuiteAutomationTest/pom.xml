@@ -17,10 +17,6 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-<!-- 					<systemPropertyVariables>
-						<platusername>${env.PLAT_USER}</platusername>
-						<platpassword>${env.PLAT_PASSWORD}</platpassword>
-					</systemPropertyVariables> -->
 					<source>1.7</source>
 					<target>1.7</target>
 					<encoding>UTF-8</encoding>
@@ -46,7 +42,6 @@
 			<resource>
 				<directory>resource</directory>
 			</resource>
-
 
 			<!-- include main.properties -->
 			<resource>
